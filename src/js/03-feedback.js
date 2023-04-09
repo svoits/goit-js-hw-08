@@ -26,7 +26,7 @@ function onDataInput() {
 // console log for input data, checks if all the fields are filled out, reset localstorage and form data
 function onFormSubmit(e) {
   e.preventDefault();
-  console.log(`email: ${email.value}, message: ${message.value}`);
+  console.log({ email: email.value, message: message.value });
 
   if (email.value === '' || message.value === '') {
     return alert('Please fill out all the fields! :)');
